@@ -49,10 +49,10 @@ before_script:
 
 # Here supply steps such as raco make, raco test, etc.  Note that you
 # need to supply /usr/racket/bin/ -- it's not in PATH. You can run
-# `raco pkg install --deps search-auto <<name>>` to install any required
+# `raco pkg install --deps search-auto racket-travis-test` to install any required
 # packages without it getting stuck on a confirmation prompt.
 script:
  - raco pkg install --deps search-auto
- - raco test -x -p <<name>>
+ - raco test -x -p racket-travis-test
 
 after_script:
