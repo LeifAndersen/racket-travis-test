@@ -52,7 +52,6 @@ before_script:
 # `raco pkg install --deps search-auto <<name>>` to install any required
 # packages without it getting stuck on a confirmation prompt.
 script:
- - cd ..   # Travis did a cd into the dir. Back up, for the next:
  - raco pkg install --deps search-auto
  - raco test -x -p <<name>>
 
